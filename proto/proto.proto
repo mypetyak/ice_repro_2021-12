@@ -1,0 +1,10 @@
+syntax = "proto3";
+package build;
+
+message MyRequest {}
+
+message MyResponse {}
+
+service Fiddler {
+    rpc Prepare (MyRequest) returns (MyResponse) {}
+}
